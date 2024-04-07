@@ -2,7 +2,7 @@
   <h1 align="center">React Native Notlarım</h1>
 </div>
 
-#### React ve React Native Temelleri
+#### ✨React ve React Native Temelleri✨
 - **JSX** React'ın dil formatıdır.
 - **Component** React dünyasınındaki her bir parçadır. Değer alabilen ve  aldığı değerleri render edebilen özel yapılardır.
 - **Stillendirmede** React Native **Yoga Layout** yapısını kullanır. Aynı CSS'de olduğu gibi benzer property'ler kullanılarak isimlendirme yapılır. Örneğin:
@@ -23,7 +23,7 @@ yapısı örnek bir stillendirmedir.
 
 - **Custom Component**: React olabildiğince sade bir kod yazmayı hedefler. Karmaşıklığa doğru gidebilecek her bir component yapısı sadeleştirilmelidir. Tekrarlı kullanıma ihtiyaç duyulabilecek bir yapı söz konusuysa burada devreye onu componentlere ayırmak giriyor. Kendi yaşam döngüleri olan componentler üzerinden gitmek her zaman karmaşık yapılara kıyasla daha mantıklı bir çözümdür.
 
-#### Expo ile React Native Projesi Oluşturma
+#### ✨Expo ile React Native Projesi Oluşturma✨
 Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeliyiz:
 - Terminale gidip ``npx create-expo-app --template`` komutuyla kurulumu başlatıyoruz.
 - Kurulumu yaparken karşımıza 4 adet template çıkacaktır. Bunlar:
@@ -41,6 +41,33 @@ Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeli
 - Expo uygulamasında ayağa kaldırdığım proje örneği:
 
 ![](https://github.com/dilarauluturhan/reactive/assets/120499369/8507904f-ba3f-4841-9a08-c9d11d8e046e)
+
+#### ✨JSX ve Component✨
+- ``<View>`` etiketi projenin container işlevine sahiptir. Web'deki karşılığı ``<div>`` etiketidir.
+- ``<Text>`` etiketi metinler içindir. Web'deki karşılığı ``<p>`` etiketidir.
+- ``<Image>`` etiketi resimler içindir. Web'deki karşılığı ``<img>`` etiketidir.
+- ``<ScrollView>`` etiketi scroll container işlevine sahiptir. Web'deki karşılığı ``<div>`` etiketidir.
+- ``<TextInput>`` etiketi metin alanları içindir. Web'deki karşılığı ``<input type="text">`` etiketidir.
+- **Dimensions**: Responsive bir tasarım istediğimizde kullanırız. Örneğin **height** vereceksem ekran büyüdükçe height büyüsün ekran küçüldükçe height küçülsün diyebilmem için Dimensions kullanırız. Örnek kod bloğu:
+````
+import { StyleSheet, Dimensions } from "react-native";
+
+const {height} = Dimensions.get('window')
+
+const styles = StyleSheet.create({
+    headerMain: {
+        height: 30,
+        backgroundColor: 'red',
+    }
+
+})
+
+export default styles;
+````
+- ``<Image>`` etiketine style vermezsen çalışmaz.
+
+##### Bu konulardan öğrendiklerimle yaptığım Getir Adres componenti:
+![](https://github.com/dilarauluturhan/reactive/assets/120499369/e30d8c6a-0556-4bba-9027-add11d198ab0)
 
 ---
 
