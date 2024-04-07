@@ -7,7 +7,7 @@
 - **Component** React dünyasınındaki her bir parçadır. Değer alabilen ve  aldığı değerleri render edebilen özel yapılardır.
 - **Stillendirmede** React Native **Yoga Layout** yapısını kullanır. Aynı CSS'de olduğu gibi benzer property'ler kullanılarak isimlendirme yapılır. Örneğin:
 
-``
+````
   StyleSheet.create({
           backgroundColor: 'red',
           padding: 10,
@@ -15,13 +15,32 @@
           borderRadius: 20
           borderWidth: 1
     })
-``
+````
 
 yapısı örnek bir stillendirmedir.
 - https://www.yogalayout.dev/playground/
 - https://flexbox.buildwithreact.com
 
 - **Custom Component**: React olabildiğince sade bir kod yazmayı hedefler. Karmaşıklığa doğru gidebilecek her bir component yapısı sadeleştirilmelidir. Tekrarlı kullanıma ihtiyaç duyulabilecek bir yapı söz konusuysa burada devreye onu componentlere ayırmak giriyor. Kendi yaşam döngüleri olan componentler üzerinden gitmek her zaman karmaşık yapılara kıyasla daha mantıklı bir çözümdür.
+
+#### Expo ile React Native Projesi Oluşturma
+Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeliyiz:
+- Terminale gidip ``npx create-expo-app --template`` komutuyla kurulumu başlatıyoruz.
+- Kurulumu yaparken karşımıza 4 adet template çıkacaktır. Bunlar:
+``Blank`` **(JavaScript ile minimal bir yapıda app yazmak için)**
+``Blank (TypeScript)`` **(TypeScript ile minimal bir yapıda app yazmak için)**
+``Navigation (TypeScript)`` **(Navigation, Expo Router olarak geçiyor yani React Navigation üzerine yazılmış bir paket. File-based routing için kullanılıyor, dosya adınızın ismine göre route işlemi yapıyor.)**
+``Blank (Bare)``
+
+**Blank(TypeScript)**'i seçerek kuruluma devam ediyoruz.
+
+- Daha sonra **What is your app named?** çıkıyor. Projenizin adını yazıyorsunuz. Ve uygulama kurulumu başlıyor.
+- Kurulum tamamlandıktan sonra projeyi Visual Studio Code'da açıyoruz. Bu aşamaya geldiğinizde telefonunuza Expo'nun uygulamasını indirip giriş yapmış olmanız gerekir.
+- Terminale gidip ``npx expo start`` diyerek projeyi ayağa kaldırıyoruz ve terminalde karşımıza QR code çıkıyor. Bu kodu Expo uygulamasında okuttuğumuzda kod çıktılarımızı görebiliyoruz.
+- Expo uygulamasından kaynaklı bir hatadan dolayı ``npx expo start`` bazen çalışmayabilir bu durumda ise ``npx expo start --tunnel`` komutunu çalıştırarak tekrar deneyebilirsiniz.
+- Expo uygulamasında ayağa kaldırdığım proje örneği:
+
+![](https://github.com/dilarauluturhan/reactive/assets/120499369/8507904f-ba3f-4841-9a08-c9d11d8e046e)
 
 ---
 
