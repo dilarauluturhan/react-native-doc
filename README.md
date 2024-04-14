@@ -42,13 +42,18 @@ Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeli
 
 ![](https://github.com/dilarauluturhan/reactive/assets/120499369/8507904f-ba3f-4841-9a08-c9d11d8e046e)
 
-#### ✨JSX ve Component✨
-- ``<View>`` etiketi projenin container işlevine sahiptir. Web'deki karşılığı ``<div>`` etiketidir.
+#### ✨JSX, Component ve Style✨
+- ``<View>`` etiketi projenin container işlevine sahiptir. Web'deki karşılığı ``<div>`` etiketidir. View, kendi içinde tuttuğu child'ları ne kadar yer kaplıyorsa default olarak o kadar yer kaplar.
 - ``<Text>`` etiketi metinler içindir. Web'deki karşılığı ``<p>`` etiketidir.
 - ``<Image>`` etiketi resimler içindir. Web'deki karşılığı ``<img>`` etiketidir.
 - ``<ScrollView>`` etiketi ekranımızın kaydırılabilir olmasını sağlar.
 - ``<FlatList>`` etiketi ScrollView ile benzer özelliğe sahip hazır bir componenttir. Carousel yaparken kullanırız.
 - ``<TextInput>`` etiketi metin alanları içindir. Web'deki karşılığı ``<input type="text">`` etiketidir.
+- **StyleSheet**, daha temiz bir şekilde style oluşturduğumuz React Native modülüdür.
+- Ekranın şu kadarını kapla, ekranın tamamını kapla, ekranın yarısını kapla, ekranı bu kadarlık oranla kapla gibi bir özelliğe ihtiyacımız olursa **Flex** kullanırız. **Flex**'in tam işlevi şudur: *Bulunduğun yerin sınırları içerisinde kaplayabildiğin kadar yer kapla.*
+https://reactnative.dev/docs/flexbox
+https://youtu.be/HSZ6iX58xls?si=Agn0LZUCoeL-aHIV
+https://youtu.be/vOsMMhci1TY?si=hTYGkJxl8i5BwFCV
 - **Dimensions**: Responsive bir tasarım istediğimizde kullanırız. Örneğin **height** vereceksem ekran büyüdükçe height büyüsün ekran küçüldükçe height küçülsün diyebilmem için Dimensions kullanırız. Örnek kod bloğu:
 ````
 import { StyleSheet, Dimensions } from "react-native";

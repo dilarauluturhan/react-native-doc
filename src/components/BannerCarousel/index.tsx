@@ -10,13 +10,6 @@ function index() {
     "https://cdn.getir.com/misc/622a6d18b2e2fe3a8e809894_banner_tr_1646947639211.jpeg",
   ]);
 
-  //   görünebilir item'larımız 0'dan büyükse aktif index'i göster.
-  //   const onViewRef = React.useRef((viewableItems) => {
-  //     if(viewableItems.viewableItems.length > 0) {
-  //         setActiveIndex()
-  //     }
-  //   })
-
   //   %50 kaydırdığımda sonraki item'a geçsin
   const viewConfigRef = React.useRef({ viewAreaCoveragePercentThreshold: 50 });
 
@@ -32,9 +25,9 @@ function index() {
       )}
       horizontal // yan yana al
       showsHorizontalScrollIndicator={false} // scroll'u gösterme
-      snapToInterval={width}
-      snapToAlignment={"center"}
-      decelerationRate={"fast"}
+      snapToInterval={width} // kullanıcı liste boyunca kaydırdığında her bir öğe tam olarak ekranda görünecek şekilde hizalanır
+      snapToAlignment={"center"} // görünen öğelerin ekranın ortasına hizalanması sağlanır
+      decelerationRate={"fast"} // içerikte hızlı bir şekilde kaydırma yapmak için
     />
   );
 }
