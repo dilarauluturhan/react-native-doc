@@ -50,10 +50,11 @@ Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeli
 - ``<FlatList>`` etiketi ScrollView ile benzer özelliğe sahip hazır bir componenttir. Carousel yaparken kullanırız.
 - ``<TextInput>`` etiketi metin alanları içindir. Web'deki karşılığı ``<input type="text">`` etiketidir.
 - **StyleSheet**, daha temiz bir şekilde style oluşturduğumuz React Native modülüdür.
+- **TouchableOpacity**, custom component oluştururken kullandığımız bir button componentidir. Bu, basabildiğimiz ve opacity efekti veren bir componenttir. View'a verebildiğimiz stilleri bu componente de verebiliriz.
 - Ekranın şu kadarını kapla, ekranın tamamını kapla, ekranın yarısını kapla, ekranı bu kadarlık oranla kapla gibi bir özelliğe ihtiyacımız olursa **Flex** kullanırız. **Flex**'in tam işlevi şudur: *Bulunduğun yerin sınırları içerisinde kaplayabildiğin kadar yer kapla.*
-https://reactnative.dev/docs/flexbox
-https://youtu.be/HSZ6iX58xls?si=Agn0LZUCoeL-aHIV
-https://youtu.be/vOsMMhci1TY?si=hTYGkJxl8i5BwFCV
+1. https://reactnative.dev/docs/flexbox
+2. https://youtu.be/HSZ6iX58xls?si=Agn0LZUCoeL-aHIV
+3. https://youtu.be/vOsMMhci1TY?si=hTYGkJxl8i5BwFCV
 - **Dimensions**: Responsive bir tasarım istediğimizde kullanırız. Örneğin **height** vereceksem ekran büyüdükçe height büyüsün ekran küçüldükçe height küçülsün diyebilmem için Dimensions kullanırız. Örnek kod bloğu:
 ````
 import { StyleSheet, Dimensions } from "react-native";
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
 
 export default styles;
 ````
-- ``<Image>`` etiketine style vermezsen çalışmaz.
+- *``<Image>`` etiketine style vermezsen çalışmaz.*
 
 #### Bu konulardan öğrendiklerimle yaptığım Getir Adres componenti:
 ![](https://github.com/dilarauluturhan/reactive/assets/120499369/e30d8c6a-0556-4bba-9027-add11d198ab0)
@@ -82,6 +83,13 @@ export default styles;
 
 - Component yapısı hakkında video: https://youtu.be/EYJqMx-mXLU?si=ccJJs8ioWqWGkAzF
 
+#### Bu konudan öğrendiklerimle yaptığım Categories componenti:
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/15c1035f-7a7c-4f71-9701-a349741a8f85)
+
+#### ✨Deep Linking✨
+- https://reactnavigation.org/docs/deep-linking
+
+- **Deep Linking**, herhangi bir sayfaya giden linki başkasıyla paylaşmamızı sağlar.
 ---
 
 #### Faydalandığım Kaynaklar:
