@@ -47,7 +47,7 @@ Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeli
 - ``<Text>`` etiketi metinler içindir. Web'deki karşılığı ``<p>`` etiketidir.
 - ``<Image>`` etiketi resimler içindir. Web'deki karşılığı ``<img>`` etiketidir.
 - ``<ScrollView>`` etiketi ekranımızın kaydırılabilir olmasını sağlar.
-- ``<FlatList>`` etiketi ScrollView ile benzer özelliğe sahip hazır bir componenttir. Carousel yaparken kullanırız.
+- ``<FlatList>`` etiketi ScrollView ile benzer özelliğe sahip hazır bir componenttir. Listeleme/Carousel yaparken kullanırız.
 - ``<TextInput>`` etiketi metin alanları içindir. Web'deki karşılığı ``<input type="text">`` etiketidir.
 - **StyleSheet**, daha temiz bir şekilde style oluşturduğumuz React Native modülüdür.
 - **TouchableOpacity**, custom component oluştururken kullandığımız bir button componentidir. Bu, basabildiğimiz ve opacity efekti veren bir componenttir. View'a verebildiğimiz stilleri bu componente de verebiliriz.
@@ -85,6 +85,13 @@ export default styles;
 
 #### Bu konudan öğrendiklerimle yaptığım Categories componenti:
 ![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/15c1035f-7a7c-4f71-9701-a349741a8f85)
+
+#### ✨State ve Lifecycle✨
+- **State**
+Değişkenimiz zaman içerisinde değişiklik gösterecek mi göstermeyecek mi? Cevap evet ise işimiz state ile demektir. **useState()**'te parantezin içine sayfa açıldığında ilk görmek istediğim veriyi yazıyorum.
+
+- **Lifecycle**
+Functional componentlarda yaşam evrelerinde büyük rol oynayan hook **useEffect** hook’udur.
 
 #### ✨Deep Linking✨
 - https://reactnavigation.org/docs/deep-linking
