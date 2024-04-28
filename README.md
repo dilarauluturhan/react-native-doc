@@ -2,7 +2,7 @@
   <h1 align="center">React Native Notlarım</h1>
 </div>
 
-#### ✨React ve React Native Temelleri✨
+### ✨React ve React Native Temelleri✨
 
 - **JSX** React'ın dil formatıdır.
 - **Component** React dünyasınındaki her bir parçadır. Değer alabilen ve aldığı değerleri render edebilen özel yapılardır.
@@ -25,7 +25,7 @@ yapısı örnek bir stillendirmedir.
 
 - **Custom Component**: React olabildiğince sade bir kod yazmayı hedefler. Karmaşıklığa doğru gidebilecek her bir component yapısı sadeleştirilmelidir. Tekrarlı kullanıma ihtiyaç duyulabilecek bir yapı söz konusuysa burada devreye onu componentlere ayırmak giriyor. Kendi yaşam döngüleri olan componentler üzerinden gitmek her zaman karmaşık yapılara kıyasla daha mantıklı bir çözümdür.
 
-#### ✨Expo ile React Native Projesi Oluşturma✨
+### ✨Expo ile React Native Projesi Oluşturma✨
 
 Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeliyiz:
 
@@ -46,7 +46,7 @@ Expo ile React Native projesi oluşturmak için aşağıdaki adımları izlemeli
 
 ![](https://github.com/dilarauluturhan/reactive/assets/120499369/8507904f-ba3f-4841-9a08-c9d11d8e046e)
 
-#### ✨JSX, Component ve Style✨
+### ✨JSX, Component ve Style✨
 
 - `<View>` etiketi projenin container işlevine sahiptir. Web'deki karşılığı `<div>` etiketidir. View, kendi içinde tuttuğu child'ları ne kadar yer kaplıyorsa default olarak o kadar yer kaplar.
 - `<Text>` etiketi metinler içindir. Web'deki karşılığı `<p>` etiketidir.
@@ -98,7 +98,7 @@ export default styles;
 
 ![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/15c1035f-7a7c-4f71-9701-a349741a8f85)
 
-#### ✨State ve Lifecycle✨
+### ✨State ve Lifecycle✨
 
 - **State**
   Değişkenimiz zaman içerisinde değişiklik gösterecek mi göstermeyecek mi? Cevap evet ise işimiz state ile demektir. **useState()**'te parantezin içine sayfa açıldığında ilk görmek istediğim veriyi yazıyorum.
@@ -118,7 +118,21 @@ useEffect(**() => {}**, **[]**) 2 parametre alır:
 
 ![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/b07d53ca-db29-491c-b967-08c859ce5ed5)
 
-#### ✨Router ve Navigation✨
+### ✨Class vs Functional Component✨
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/4b6eacf0-3723-4e4e-939a-73ecd441b07c)
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/dabf4f32-0664-469a-ba21-eb32edd57ed0)
+---
+#### Class vs Functional Component State Gösterimi
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/7c89ce04-dae9-4357-bfc6-a22b62c5520d)
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/704374d6-9dc8-4526-b721-52fe19ef04ff)
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/97cf7cfb-64bd-4c4c-a141-fec93df77485)
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/2e9b1883-4d0d-4c19-9405-f8c3f8dea36e)
+---
+#### Class vs Functional Component Lifecycle
+![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/965d5405-13ba-4c02-93e2-1d91ff491b7e)
+*Kaynak: Ezran Bayantemur*
+
+### ✨Router ve Navigation✨
 
 React Native uygulamalarında yönlendirme için bir çok alternatif paket var.
 
@@ -128,12 +142,17 @@ React Native uygulamalarında yönlendirme için bir çok alternatif paket var.
 ---
 
 Bunlardan **React Navigation**'ı kullanacağım. React Navigation, topluluğun geliştirdiği ve sayfalar arası gezinmeyi sağlayan üçüncü parti bir kütüphanedir.
+React Navigation hakkında daha fazla bilgi almak için linkini bıraktığım yazıya bakabilirsiniz: https://medium.com/@dilarauluturhan/ekranlar-arası-yolculuk-react-navigation-2d971aee6697
+
+---
+
+- Not: React Native'de conditional yapı şu şekilde olur: **{helloFlag && <Hello//>}** -> helloFlag true ise Hello componentini çağır demektir.
 
 #### Bu konudan öğrendiklerimle yaptığım ana sayfa için Navigation kullanımı- Header componenti:
 
 ![](https://github.com/dilarauluturhan/react-native-doc/assets/120499369/06b34050-37c9-4fce-ab4b-8d0536b4f4ea)
 
-#### ✨Deep Linking✨
+### ✨Deep Linking✨
 
 - https://reactnavigation.org/docs/deep-linking
 
